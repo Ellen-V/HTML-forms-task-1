@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Формы в HTML</title>
+        <style>
+
+        </style>
+    </head>
+    <body>
+
+        <!--Контейнер для формы-->
+       <form action="#" autocomplete="on" enctype="multipart/form-data" method="POST" target="_blank">
+        <fieldset>
+            <legend>
+                Анкета пользователя
+            </legend>
+
+            <label for="user-name">Введите имя</label>
+            <input id="user-name" type="text" placeholder="
+            Например, Иван" required maxlength="5" minlength="2" autocomplete="on" 
+            name="user-name" value="Иван"> <br>
+
+            <label for="#">Введите номер телефона</label>
+            <input type="tel" placeholder="+7 999 999 99 99"><br>
+
+            <label for="#">Введите email</label>            
+            <input type="email" required><br>
+
+            <label for="#">Ваше любимое блюдо</label><br>  
+            
+            <input id="pizza" type="checkbox" required>
+            <label for="pizza">Пицца</label>
+
+            <input id="potato" type="checkbox" required>
+            <label for="potato">Картошка</label>
+
+            <input id="beer" type="checkbox" required>
+            <label for="beer">Пиво</label><br>
+
+            <label for="#">Дата вашего рождения</label>
+            <input type="date" name="" id=""><br>
+            
+            <!--Загрузка файлов через форму-->
+            <input type="file"><br>
+
+            <!--Форма для пароля-->
+            <input type="password"><br>
+
+            <input type="range"><br>
+
+            <!--Кнопка сброса формы-->
+            <input type="reset"><br>
+
+            <!--Развернутый коментарий-->
+            <textarea cols="20" rows="5"></textarea><br><br>
+
+            <!--Выпадающий список-->
+            <select multiple size="2">
+                <option value="">Москва</option>
+                <option value="">Питер</option>
+                <option value="" disabled>Казань</option>
+            </select>
+
+            <!--Кнопка отправить-->
+            <br><br>
+            <input type="submit" value="Послать">
+            <button type="submit">Кнопка отправки формы</button>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                Данные пользователя
+            </legend>
+           </fieldset>
+
+       </form>
+
+        
+    </body>
+
+
+
+
+
+
+</html>
